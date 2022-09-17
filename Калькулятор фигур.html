@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Задания
+        -Сделайте калькулятор, который будет находить площадь и периметр квадрата.
+        -Сделайте калькулятор, который будет находить площадь и периметр прямоугольника.
+        -Сделайте калькулятор, который будет находить площадь круга и длину окружности.
+        -Сделайте калькулятор, который будет находить площадь треугольника по трем сторонам.
+    -->
+    <main>
+        <h1>Задание 1</h1>
+        <h4>Нахождение площади и периметра квадрата</h4>
+        <p>
+            <label for="side">Сторона</label><br>
+            <input onchange="calculate_square()" type="number" name="side" id="side_of_the_sqare" value="5">
+        </p>
+        <h4 id="result_square"></h4>
+
+        <h4>Нахождение площади и периметра прямоугольника</h4>
+        <p>
+            <label for="height">Высота</label><br>
+            <input onchange="calculate_rectangle()" type="number" name="height" id="height_rectangle" value="5">
+        </p>
+        <p>
+            <label for="width">Ширина</label><br>
+            <input onchange="calculate_rectangle()" type="number" name="width" id="width_rectangle" value="5">
+        </p>
+        <h4 id="result_rectangle"></h4>
+
+
+        <h4>Нахождение площади и длинны окружности</h4>
+        <p>
+            <label for="radius">Радиус</label><br>
+            <input onchange="calculate_circle()" type="number" name="radius" id="radius_of_circle" value="5">
+        </p>
+        <h4 id="result_circle"></h4>
+
+
+        <h4>Нахождение площади триугольника</h4>
+        <p>
+            <label for="side_a">Сторона А</label><br>
+            <input onchange="calculate_triangle()" type="number" name="side_a" id="side_a" value="5">
+        </p>
+        <p>
+            <label for="side_b">Сторона В</label><br>
+            <input onchange="calculate_triangle()" type="number" name="side_b" id="side_b" value="5">
+        </p>
+        <p>
+            <label for="side_c">Сторона С</label><br>
+            <input onchange="calculate_triangle()" type="number" name="side_c" id="side_c" value="5">
+        </p>
+        <h4 id="result_triangle"></h4>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
